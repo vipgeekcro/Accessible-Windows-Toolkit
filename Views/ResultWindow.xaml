@@ -1,0 +1,13 @@
+<Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" Title="Accessible Windows Toolkit" Width="620" Height="400" MinWidth="540" MinHeight="340" WindowStartupLocation="CenterScreen" ResizeMode="CanResize" ShowInTaskbar="True" FontFamily="Segoe UI" FontSize="15" SnapsToDevicePixels="True" UseLayoutRounding="True">
+      <Window.Resources><Style TargetType="Button"><Setter Property="FontFamily" Value="Segoe UI" /><Setter Property="FontSize" Value="15" /><Setter Property="Padding" Value="16,9" /><Setter Property="MinHeight" Value="44" /><Setter Property="MinWidth" Value="140" /></Style></Window.Resources>
+      <Grid Margin="30"><Grid.RowDefinitions><RowDefinition Height="Auto" /><RowDefinition Height="*" /><RowDefinition Height="Auto" /></Grid.RowDefinitions>
+        <TextBlock Grid.Row="0" Text="Removal completed" FontSize="27" FontWeight="SemiBold" Margin="0,0,0,18" />
+        <StackPanel Grid.Row="1" VerticalAlignment="Center">
+          <TextBlock Name="SuccessText" FontSize="17" Margin="0,6" TextWrapping="Wrap" />
+          <TextBlock Name="FailedText" FontSize="17" Margin="0,6" TextWrapping="Wrap" />
+          <TextBlock Name="AbsentText" FontSize="17" Margin="0,6" TextWrapping="Wrap" />
+          <TextBlock Text="Every result was verified after the removal attempt." FontSize="15" Margin="0,18,0,0" TextWrapping="Wrap" />
+        </StackPanel>
+        <Button Grid.Row="2" Name="ResultOkButton" Content="OK" HorizontalAlignment="Right" Margin="0,22,0,0" AutomationProperties.Name="OK" />
+      </Grid>
+    </Window>
