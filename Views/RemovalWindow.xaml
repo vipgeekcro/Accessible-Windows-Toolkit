@@ -1,0 +1,3 @@
+<Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" Title="Accessible Windows Toolkit" Width="560" Height="210" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" ShowInTaskbar="True" FontFamily="Segoe UI" FontSize="16">
+      <Grid Margin="28"><StackPanel VerticalAlignment="Center"><TextBlock Text="Removing selected items" FontSize="22" FontWeight="SemiBold" TextAlignment="Center" /><TextBlock Name="RemovalStatusText" AutomationProperties.LiveSetting="Polite" Text="Preparing removal..." Margin="0,14,0,0" TextWrapping="Wrap" TextAlignment="Center" /><TextBlock Name="RemovalDetailText" Text="" Margin="0,8,0,0" TextAlignment="Center" /></StackPanel></Grid>
+    </Window>
