@@ -1,0 +1,8 @@
+<Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" Title="Accessible Windows Toolkit" Width="520" Height="180" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" ShowInTaskbar="True" FontFamily="Segoe UI" FontSize="16">
+      <Grid Margin="28">
+        <StackPanel VerticalAlignment="Center">
+          <TextBlock Text="Please wait..." FontSize="22" FontWeight="SemiBold" TextAlignment="Center" />
+          <TextBlock Text="Scanning system for removable applications and components." Margin="0,12,0,0" TextWrapping="Wrap" TextAlignment="Center" />
+        </StackPanel>
+      </Grid>
+    </Window>
