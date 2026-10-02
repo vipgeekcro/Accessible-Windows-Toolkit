@@ -1,0 +1,18 @@
+<Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" Title="Accessible Windows Toolkit" Width="760" Height="540" MinWidth="620" MinHeight="440" FontFamily="Segoe UI" FontSize="15" WindowStartupLocation="CenterScreen" ResizeMode="CanResize" ShowInTaskbar="True" SnapsToDevicePixels="True" UseLayoutRounding="True">
+      <Window.Resources>
+        <Style TargetType="Button"><Setter Property="FontFamily" Value="Segoe UI" /><Setter Property="FontSize" Value="15" /><Setter Property="Padding" Value="16,9" /><Setter Property="MinHeight" Value="44" /><Setter Property="MinWidth" Value="140" /></Style>
+      </Window.Resources>
+      <Grid Margin="30">
+        <Grid.RowDefinitions><RowDefinition Height="Auto" /><RowDefinition Height="*" /><RowDefinition Height="Auto" /></Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" Orientation="Horizontal" Margin="0,0,0,18">
+          <TextBlock Text="Warning" FontSize="27" FontWeight="SemiBold" VerticalAlignment="Center" />
+        </StackPanel>
+        <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled" Focusable="False">
+          <TextBlock Name="WarningText" TextWrapping="Wrap" FontSize="16" Focusable="False" />
+        </ScrollViewer>
+        <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,22,0,0">
+          <Button Name="ContinueButton" Content="Continue" MinWidth="150" Margin="0,0,10,0" AutomationProperties.Name="Continue" AutomationProperties.AcceleratorKey="Alt+C" />
+          <Button Name="ExitButton" Content="Exit" MinWidth="140" IsCancel="True" AutomationProperties.Name="Exit" AutomationProperties.AcceleratorKey="Alt+E" />
+        </StackPanel>
+      </Grid>
+    </Window>
